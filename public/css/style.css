@@ -1,0 +1,471 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Chery", cursive;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    
+}
+
+/*Navbar*/
+.navbar {
+    background-color: cadetblue;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 800;
+}
+.logo img {
+    margin: 0 50px;
+    width: 100px;
+    height:80px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    width: 300px;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color .50s ease;
+}
+
+.nav-links li a:hover {
+    color: turquoise;  
+    text-shadow: 3px 3px 20px rgb(0, 0, 0), -2px 1px 30px #fff;  
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    background-image: url(/img/4855443.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.alert-info h5 {
+    color: rgb(104, 112, 117);
+    font-size: 25px;
+    text-align: center;
+}
+.alert-info h4 {
+    text-align: center;
+}
+.alert-info {
+    background-color: lightblue;
+}
+.alert-infos {
+    background-color: lightblue;
+}
+
+/*Fotos Principal*/
+.carousel-inner {
+    width: 50%;
+    text-align: center;
+}
+
+/*Inicios bienvenido*/
+.bienvenido {
+    text-align: center;
+    color: cadetblue;
+}
+/*segundo texto*/
+.segundo {
+    text-align: center;
+    
+}
+ /*Cabanas texto*/
+ .container h6 {
+    font-size: 18px;
+}
+/*Cabanas imagenes*/
+.carousel-inner img {
+    width: 50%;
+}
+
+/*H4 text-center*/
+h4.text-center {
+    font-size: 20px;
+}
+
+
+/*Abajo contacto*/
+footer {
+    grid-area: footer;
+    color: whitesmoke;
+    background-color :darkslategray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+  .footer-contact, .footer-social, .footer-legal {
+    width: 100%;
+    margin: 2em 0;
+  }
+  .footer-contact h4 {
+    font-size:22px;
+}
+.footer-contact, .footer-social, .footer-legal h4 p a {
+    font-size: 19px;
+} 
+  footer p {
+    width: 100%;
+    line-height: 1.6;
+    color: rgb(89, 226, 231);
+  }
+  .footer-icons {
+    font-size: 1.4rem;
+    margin-bottom: 2em;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover {
+    text-transform: uppercase;
+  }
+  
+  .social i {
+    display: inline-block;
+    font-size: 25px;
+    color: #a3abb2;
+    margin-right: 15px;
+    transition: all ease .55s;
+}
+.social i:hover {
+    transform: scale(1.08) translateY(-4px);
+    color: #e3d297;
+}
+  /* Form - Contactos y Email */
+  .contact-form {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+  }
+  .contact-form .form-control {
+    border-radius: 1rem;
+  }
+  .contact-form form {
+    padding: 0;
+    text-align: center;
+  }
+  .contact-form form .row {
+    margin-bottom: -7%;
+  }
+  .contact-form h3 {
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #00becc;
+  }
+  .contact-form .btnContact {
+    width: 30%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #8cb8d7;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+  }
+  .btnContact1 {
+    background: #8cb8d7;
+    color: #fff;
+    padding: 1.5%;
+    border-radius: 1rem;
+  }
+  .gracias1 {
+    font-size: 30px;
+  }
+  .gracias {
+    background: #a2bacb;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+  .gracias:hover {
+    color: rgb(230, 238, 238);
+    transition: color 0.9s ease;
+    cursor: pointer;
+  }
+
+#menu-icon {
+    font-size: 34px;
+    color: #fff;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 1300px) {
+    .navbar {
+        padding: 10px 4%;
+    }
+    .nav-links {
+        width: 480px;
+    }
+    .nav-links a {
+        font-size: 18px;
+    }
+    .alert-info h5 {
+        font-size: 22px;
+    }
+    h4.alert-infos {
+        font-size: 22px;
+    }
+    .bienvenido h4 {
+        font-size: 22px;
+    }
+    /*segundo texto*/
+    .segundo h5 {
+        font-size: 18px;
+    }
+     /*Cabanas texto*/
+    .container h6 {
+        font-size: 16px;
+    }
+    /*Cabanas imagenes*/
+    .carousel-inner img {
+        width: 60%;
+    }
+    /*H4 text-center*/
+    h4.text-center {
+        font-size: 18px;
+    }
+    /*Abajo contacto*/
+    .footer-contact h4 {
+        font-size: 19px;
+    }
+    .footer-contact, .footer-social, .footer-legal h4 p a {
+        font-size: 17px;
+    } 
+    .social i {
+        font-size: 20px;
+    }
+    .btnContactSubmit {
+        width: 40%;
+      }
+    .gracias1 {
+        font-size: 25px;
+      } 
+    .gracias {
+        font-size: 25px;
+      }
+}
+@media(max-width: 1000px) {
+    .logo {
+        font-size: 25px;
+    }
+    .nav-links {
+        width: 480px;
+    }   
+    .nav-links a {
+        font-size: 14px;
+    } 
+    .alert-info h5 {
+        font-size: 18px;
+    }
+    h4.alert-infos {
+        font-size: 20px;
+    }
+    .bienvenido h4 {
+        font-size: 20px;
+    }
+    /*segundo texto*/
+    .segundo h5 {
+        font-size: 16px;
+    }
+     /*Cabanas texto*/
+    .container h6 {
+        font-size: 14px;
+    }
+    /*Cabanas imagenes*/
+    .carousel-inner img {
+        width: 70%;
+    }
+    /*H4 text-center*/
+    h4.text-center {
+        font-size: 16px;
+    }
+    /*Abajo contacto*/
+    .footer-contact h4 {
+        font-size: 17px;
+    }
+    .footer-contact, .footer-social, .footer-legal h4 p a {
+        font-size: 15px;
+    }
+    .social i {
+        font-size: 17px;
+    }
+    .btnContactSubmit {
+        width: 30%;
+      }
+    .gracias1 {
+        font-size: 20px;
+      }
+    .gracias {
+        font-size: 20px;
+      }
+}
+@media(max-width: 800px) {
+    #menu-icon {
+        display: block;
+    } 
+    .nav-links li a:hover {
+        color: rgb(51, 218, 134);  
+    } 
+    .nav-links {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(32px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 100px;
+        transition: all .7s ease;
+    } 
+    .nav-links li a {
+        display: block;
+        padding: 0;
+        margin: 0px 0px 50px 0px;
+        font-size: 1.5rem;
+        color: rgb(113, 94, 68);
+    }  
+    .nav-links.active {
+        right: 0;
+    } 
+    .alert-info h5 {
+        font-size: 15px;
+    }
+    h4.alert-infos {
+        font-size: 18px;
+    }
+    .bienvenido h4 {
+        font-size: 18px;
+    }
+    /*segundo texto*/
+    .segundo h5 {
+        font-size: 14px;
+    }
+
+    /*Cabanas texto*/
+     .container h6 {
+        font-size: 12px;
+    }
+    /*Cabanas imagenes*/
+    .carousel-inner img {
+        width: 80%;
+    }
+    /*H4 text-center*/
+    h4.text-center {
+        font-size: 14px;
+    }   
+    /*Abajo contacto*/
+    .footer-contact h4 {
+        font-size: 15px;
+    }
+    .footer-contact, .footer-social, .footer-legal h4 p a {
+        font-size: 13px;
+    } 
+    .social i {
+        font-size: 14px;
+    }
+    .btnContactSubmit {
+        width: 30%;
+      } 
+    .gracias1 {
+        font-size: 15px;
+      }
+    .gracias {
+        font-size: 15px;
+      }
+}
+@media(max-width: 450px) {
+    .nav-links {
+        width: 330px;
+    }  
+    .nav-links a {
+        font-size: 1rem;
+    }  
+    .alert-info h5 {
+        font-size: 13px;
+    } 
+    h4.alert-infos {
+        font-size: 16px;
+    }
+    .bienvenido h4 {
+        font-size: 16px;
+    }
+    /*segundo texto*/
+    .segundo h5 {
+        font-size: 10px;
+    }
+     /*Cabanas texto*/
+     .container h6 {
+        font-size: 10px;
+    }
+    /*Cabanas imagenes*/
+    .carousel-inner img {
+        width: 93%;
+    }
+    /*H4 text-center*/
+    h4.text-center {
+        font-size: 12px;
+    } 
+    /*Abajo contacto*/
+    .footer-contact h4 {
+        font-size: 13px;
+    }
+    .footer-contact, .footer-social, .footer-legal p a {
+        font-size: 10px;
+    } 
+    .social i {
+        font-size: 10px;
+    }
+    .btnContactSubmit {
+        width: 20%;
+      }
+    .gracias1 {
+        font-size: 10px;
+    }
+    .gracias {
+        font-size: 10px;
+    }
+}

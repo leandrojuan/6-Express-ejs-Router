@@ -1,0 +1,97 @@
+<%- include('partials/header') -%>
+
+<div class="contenedor">
+	
+    <h4 class="alert-infos text-center">CONTACTO</h4>
+    <br>
+
+        <div class="alert-infos" >
+        <h4 class="text-center">Contacto</h4>
+      </div>
+      
+      
+      <div class="container contact-form">
+        <form method="POST" action="/contacto" class="formulario" >
+          
+          <% if (typeof statusMessage !== "undefined") { %> 
+            <span class="gracias"><%= statusMessage %></span>
+          <% } %>
+          
+          <h3 class="gracias1">Envíanos un mensaje</h3>
+            <div class="contacto">
+              <div class="form-group m-3">
+                <input type="text" name="name" class="form-control" placeholder="Su Nombre..." value="" required />
+              </div>
+              <div class="form-group m-3">
+                <input type="text" name="email" class="form-control" placeholder="Tu Correo Electrónico" value="" required />
+              </div>
+              <div class="form-group m-3">
+                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tu Mensaje" value="" required></textarea>
+              </div>
+              <div class="form-group m-3">
+                <input type="submit" name="btnSubmit" class="btnContact" value="Enviar mensaje" />
+                <input type="reset" name="btnReset" class="btnContact1" value="Limpiar">
+              </div>
+            </div>
+          
+        </form>
+      </div>
+
+      <div class="alert-infos" >
+        <h4 class="text-center">Tarifas</h4>
+      </div>
+        <br>
+         <div class="container">
+                  
+   
+    
+             <table class="text-center" width="100%" border="2">
+      <tbody>
+        <tr>
+          <td><h6 class="text-center "></h6></td>
+          <td><h6 class="text-center ">Pasajeros</h6></td>
+          <td><h6 class="text-center ">Temp. Alta</h6></td>
+          <td><h6 class="text-center ">Temp. Media</h6></td>
+          <td><h6 class="text-center ">Temp. Baja</h6></td>
+        </tr>
+        <tr>
+          <td><h6 class="text-center ">Superior VIP</h6></td>
+          <td><h6 class="text-center ">2</h6></td>
+          <td><h6 class="text-center ">-</h6></td>
+          <td><h6 class="text-center ">-</h6></td>
+          <td><h6 class="text-center ">-</h6></td>
+        </tr>
+        <tr>
+          <td><h6 class="text-center ">Superior</h6></td>
+          <td><h6 class="text-center ">2 a 5</h6></td>
+          <td><h6 class="text-center ">-</h6></td>
+          <td><h6 class="text-center ">-</h6></td>
+          <td><h6 class="text-center ">-</h6></td>
+        </tr>
+        <tr>
+          <td><h6 class="text-center ">Estandar</h6></td>
+          <td><h6 class="text-center ">2 a 5</h6></td>
+          <td><h6 class="text-center ">-</h6></td>
+          <td><h6 class="text-center ">-</h6></td>
+          <td><h6 class="text-center ">-</h6></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+        <div class="segundo">  
+             <h5 class="text-left ">- Temporada Alta: Del 20 de Diciembre al 31 de Marzo,  Carnaval, Semana Santa y Vacaciones de invierno.</h5>
+             <h5 class="text-left ">- Temporada Media: Mes de Agosto.</h5>
+             <h5 class="text-left ">- Temporada Baja: Resto del Año.</h5>
+           <p></p>
+             <h5 class="text-left ">Horarios de ingresos: A partir de las 12 hs.</h5>
+             <h5 class="text-left ">Horarios de salida: Hasta las 10 hs.</h5>
+            </div>
+        </div>
+      
+      
+       <br><br><br>
+        <h5 class="text-center">P: (www)www-wwww</h5>
+       <br><br>
+</div>
+
+<%- include('partials/footer') -%>
